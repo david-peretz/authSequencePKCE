@@ -55,5 +55,12 @@ export function getClientSettings(): UserManagerSettings {
     scope: 'openid profile Profile OfflineAccess',
     filterProtocolClaims: true,
     loadUserInfo: true,
+    metadata: {
+      issuer: 'http://localhost:44348/',
+      authorization_endpoint: 'http://localhost:44348/',
+      userinfo_endpoint: 'https://foo.com/',
+      end_session_endpoint: 'https://foo.com/',
+      jwks_uri: 'https://localhost:44348/connect/authorize',
+    },
   };
 }
