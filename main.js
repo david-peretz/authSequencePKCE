@@ -423,7 +423,7 @@ function getClientSettings() {
         redirect_uri: 'https://david-peretz.github.io/authSequencePKCE/auth-callback',
         post_logout_redirect_uri: 'https://david-peretz.github.io/authSequencePKCE/',
         response_type: 'code',
-        scope: 'openid profile',
+        scope: 'openid profile api1',
         filterProtocolClaims: true,
         loadUserInfo: true,
     };
