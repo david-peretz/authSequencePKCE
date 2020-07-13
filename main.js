@@ -260,9 +260,12 @@ class CallApiComponent {
         this.authService = authService;
     }
     ngOnInit() {
-        let headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({ 'Authorization': this.authService.getAuthorizationHeaderValue() });
-        this.http.get("http://localhost:5555/api", { headers: headers })
-            .subscribe(response => this.response = response);
+        let headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+            Authorization: this.authService.getAuthorizationHeaderValue(),
+        });
+        this.http
+            .get('https://localhost:44348/api', { headers: headers })
+            .subscribe((response) => (this.response = response));
     }
 }
 CallApiComponent.ɵfac = function CallApiComponent_Factory(t) { return new (t || CallApiComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"])); };
@@ -417,10 +420,10 @@ function getClientSettings() {
     return {
         authority: 'https://localhost:44348/',
         client_id: 'datos',
-        redirect_uri: 'https://david-peretz.github.io/authSequencePKCE/auth-callback',
-        post_logout_redirect_uri: 'https://david-peretz.github.io/authSequencePKCE/',
+        redirect_uri: 'http://localhost:4200/auth-callback',
+        post_logout_redirect_uri: 'http://localhost:4200/',
         response_type: 'code',
-        scope: 'openid profile',
+        scope: 'openid profile api1',
         filterProtocolClaims: true,
         loadUserInfo: true,
     };
