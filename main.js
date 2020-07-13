@@ -415,20 +415,14 @@ AuthService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjec
     }], function () { return []; }, null); })();
 function getClientSettings() {
     return {
-        authority: 'http://localhost:44348/',
+        authority: 'https://localhost:44348/',
         client_id: 'datos',
         redirect_uri: 'https://david-peretz.github.io/authSequencePKCE/auth-callback',
         post_logout_redirect_uri: 'https://david-peretz.github.io/authSequencePKCE/',
         response_type: 'code',
-        scope: 'openid profile Profile OfflineAccess',
+        scope: 'email openid profile OfflineAccess api DatosApi',
         filterProtocolClaims: true,
         loadUserInfo: true,
-        metadata: {
-            issuer: 'http://localhost:44348/',
-            authorization_endpoint: 'https://localhost:44348/connect/authorize',
-            userinfo_endpoint: 'http://localhost:5002/api/getUserInfoByToken',
-            end_session_endpoint: 'http://localhost:44348/',
-        },
     };
 }
 
