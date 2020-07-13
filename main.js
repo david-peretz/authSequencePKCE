@@ -417,10 +417,10 @@ function getClientSettings() {
     return {
         authority: 'https://localhost:44348/',
         client_id: 'datos',
-        redirect_uri: 'https://david-peretz.github.io/authSequencePKCE/auth-callback',
-        post_logout_redirect_uri: 'https://david-peretz.github.io/authSequencePKCE/',
+        redirect_uri: 'http://localhost:4200/auth-callback',
+        post_logout_redirect_uri: 'http://localhost:4200/',
         response_type: 'code',
-        scope: 'email openid profile OfflineAccess api DatosApi',
+        scope: 'openid profile',
         filterProtocolClaims: true,
         loadUserInfo: true,
     };
