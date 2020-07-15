@@ -418,7 +418,7 @@ AuthService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjec
     }], function () { return []; }, null); })();
 function getClientSettings() {
     return {
-        authority: 'https://localhost:44348/',
+        authority: 'http://localhost:5000/',
         client_id: 'datos',
         // redirect_uri: 'http://localhost:4200/auth-callback',
         // post_logout_redirect_uri: 'http://localhost:4200/',
