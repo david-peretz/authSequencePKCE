@@ -426,8 +426,6 @@ function getClientSettings() {
         response_type: 'code',
         scope: 'openid profile api1',
         authority: 'http://localhost:5000/',
-        // filterProtocolClaims: true,
-        loadUserInfo: true,
     };
 }
 
