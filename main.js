@@ -418,17 +418,31 @@ AuthService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjec
     }], function () { return []; }, null); })();
 function getClientSettings() {
     return {
-        authority: 'https://localhost:44348/',
-        client_id: 'datos',
+        authority: 'http://localhost:5000/',
+        client_id: 'datosWeb',
         // redirect_uri: 'http://localhost:4200/auth-callback',
         // post_logout_redirect_uri: 'http://localhost:4200/',
         redirect_uri: 'https://david-peretz.github.io/authSequencePKCE/auth-callback',
         post_logout_redirect_uri: 'https://david-peretz.github.io/authSequencePKCE/',
         response_type: 'code',
-        scope: 'openid profile api1',
+        scope: 'openid',
         filterProtocolClaims: true,
         loadUserInfo: true,
     };
+    // return {
+    //   authority: 'https://localhost:44348/',
+    //   client_id: 'datos',
+    //   // redirect_uri: 'http://localhost:4200/auth-callback',
+    //   // post_logout_redirect_uri: 'http://localhost:4200/',
+    //   redirect_uri:
+    //     'https://david-peretz.github.io/authSequencePKCE/auth-callback',
+    //   post_logout_redirect_uri:
+    //     'https://david-peretz.github.io/authSequencePKCE/',
+    //   response_type: 'code',
+    //   scope: 'openid profile api1',
+    //   filterProtocolClaims: true,
+    //   loadUserInfo: true,
+    // };
 }
 
 
