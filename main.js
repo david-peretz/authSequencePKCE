@@ -418,7 +418,7 @@ AuthService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjec
     }], function () { return []; }, null); })();
 function getClientSettings() {
     return {
-        authority: 'http://localhost:5000/',
+        authority: 'https://vqaonline.leumit.co.il/leumitIdentityAuth/',
         client_id: 'datosWeb',
         // redirect_uri: 'http://localhost:4200/auth-callback',
         // post_logout_redirect_uri: 'http://localhost:4200/',
